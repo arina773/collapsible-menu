@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+}
+
+.menu1{
+    position: absolute;
+    visibility: visible;
+    width: 20px;
+    height: 100%;
+    background-color: lightblue
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-color: lightblue;
+    visibility: hidden;
+}
+.menu:hover {
+    visibility: visible;
+}
+
+.menu:hover .menu1{
+    visibility: hidden;
+}
+
+.menu-item {
+    /* display: inline-block; */
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: lightcoral;
+}
+
+.dropdown {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    display: block;
+    background-color: lightblue;
+    display: none;
+}
+
+.menu-item:hover .dropdown{
+    display: block;
+}
+
+.dropdown-item {
+    padding: 15px 10px 15px 10px;
+    /* word-wrap: none; */
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: lightcoral;
+}
